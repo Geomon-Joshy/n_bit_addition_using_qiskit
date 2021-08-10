@@ -7,13 +7,13 @@ def conv(a,n): # defining a fuction to covert a decimal number into binary codes
   r=array([0,0,0,0,0])
   if a==1: #if the decimal numbe is one the fisrt value in array is made a 1
     r[0]=1
-  for i in range(a): #the valuesin array is made one when the decimal number gives reminder on undergoin continues division by 2 
+  for i in range(a): #the values in array is made one when the decimal number gives reminder on undergoin continues division by 2 
     if a>=1:
       r[i]=a%2
       a=a/2
     i=i+1
   return r
-def sum_circuit(qc,i): #defining a function to add two bits
+def sum_circuit(qc,i): #defining a function to add two bits and the carry from previous addition
   qc.ccx(i,i+1,i+3)
   qc.cx(i,i+1)
   qc.ccx(i+1,i+2,i+3)
