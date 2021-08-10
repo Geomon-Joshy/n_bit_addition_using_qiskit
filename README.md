@@ -1,2 +1,5 @@
-# n_bit_addition_using_qiskit
-This is my try at making a qiskit (quantum computing)program to add 2 n_bit numbers
+This a Qiskit program to run 2 decimal numbers and see their results in binary numbers
+A maximum of 5 bit can be used. If you need to add more bits please MAKE the following change in the code
+                      add more 0s to the array 'r'
+This is only a simulator code, to run on a real Quatum computer minor tweeks has to be made
+
