@@ -3,7 +3,7 @@ from qiskit.visualization import plot_histogram
 from numpy import array
 sim=Aer.get_backend('aer_simulator')
 q=0
-def conv(a,n): # defining a fuction to covert a decimal number into binary codes
+def conv(a,n): # defining a fuction to covert a decimal number into binary codes.
     """ Args:  
         (int): the number to be converted.
         n (int): the number of bits.
@@ -11,9 +11,9 @@ def conv(a,n): # defining a fuction to covert a decimal number into binary codes
         r(array) An array which returns the binary value of the integer.
   """       
     r=array([0]*n)
-    if a==1: #if the decimal numbe is one the fisrt value in array is made a 1
+    if a==1: #if the decimal number is one the fisrt value in the array is set to 1
         r[0]=1
-    for i in range(a): #the values in array is made one when the decimal number gives reminder on undergoin continues division by 2 
+    for i in range(a): #the values in array is made 1 when the decimal number gives reminder on undergoin continues division by 2 
         if a>=1:
               r[i]=a%2
               a=a/2
