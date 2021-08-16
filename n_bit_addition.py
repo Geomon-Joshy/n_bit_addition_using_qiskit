@@ -43,7 +43,6 @@ for i in range(n):
   if br[i]==1:
     qc.x(q+1)
   q +=3
-  i +=1
 i=0
 qc.ccx(i,i+1,i+2) #adding the first two qubits
 qc.cx(i,i+1)
