@@ -1,5 +1,4 @@
 from qiskit import QuantumCircuit,Aer,assemble
-from qiskit.visualization import plot_histogram
 from numpy import array
 sim=Aer.get_backend('aer_simulator')
 q=0
@@ -61,6 +60,5 @@ qc.barrier()
 qc.measure((3*n)-1,n) #measuring the carry of highest value addition
 qobj = assemble(qc) #simulating the circuit
 counts = sim.run(qobj).result().get_counts()
-plot_histogram(counts)  #plotting histogram
 s=list(counts.keys())[0] # trasfering the result into a sting s
 print("Answer is :",int(s, 2)) #printing the decimal value
