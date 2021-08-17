@@ -5,7 +5,7 @@ sim=Aer.get_backend('aer_simulator')
 q=0
 def conv(a,n): # defining a fuction to covert a decimal number into binary codes.
     """ Args:  
-        (int): the number to be converted.
+        a (int): the number to be converted.
         n (int): the number of bits.
     Returns:
         r(array) An array which returns the binary value of the integer.
