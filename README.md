@@ -1,8 +1,14 @@
-Python3 along with Qiskit , Qiskit.visualization libraries are prerequired
-This is a Qiskit program to run 2 decimal numbers and see their results in binary numbers.
-This is only a simulator code, to run on a real Quatum computer minor tweeks has to be made.
-In here we are using the code:
-   qc.ccx(q,q+1,q+2)
-   qc.cx(q,q+1)  to add two bits, because it uses fewer bits than the traditional sum method in qiskit.
-
-     
+# n_bit_addition
+## addition of two n_bit numbers using qiskit
+This is a qiskit algoritham to add a decimal number with another number.\
+libraries needed :-
+  1. python3.
+  2. qiskit .
+  3. qiskit.visualization.\
+Two do addtion of two consiqutivebits with carry the following code is used:-
+- qc.ccx(i,i+1,i+3)
+- qc.cx(i,i+1)
+- qc.ccx(i+1,i+2,i+3)
+- qc.cx(i+1,i+2)\
+The number of bit of the biggest number has to be given as input.\
+The total number of bits used **3*n**
