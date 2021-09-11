@@ -8,10 +8,14 @@ libraries needed :-
   3. qiskit.visualization.
 <br>
 Two do addtion of two consiqutivebits with carry the following code is used:-
+<br>
 <code block>
 qc.ccx(i,i+1,i+3) 
+<br>
 qc.cx(i,i+1) 
+<br>
 qc.ccx(i+1,i+2,i+3)
+<br>
 qc.cx(i+1,i+2)
 </code block>
 <br>
