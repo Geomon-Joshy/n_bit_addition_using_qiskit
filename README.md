@@ -12,5 +12,6 @@ qc.cx(i,i+1)
 qc.ccx(i+1,i+2,i+3)
 qc.cx(i+1,i+2)
 </code block>
+<br>
 The number of bit of the biggest number has to be given as input.\
 The total number of bits used **3*n**
